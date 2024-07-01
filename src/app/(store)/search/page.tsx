@@ -1,5 +1,7 @@
 import { api } from '@/app/data/api'
 import { Product } from '@/app/data/types/product'
+import Image from 'next/image'
+import Link from 'next/link'
 import { redirect } from 'next/navigation'
 
 interface SearchProps {
@@ -29,8 +31,6 @@ export default async function Search({ searchParams }: SearchProps) {
 
   const products = await searchProducts(query)
 
-  console.log(products)
-
   return (
     <div className="flex flex-col gap-4">
       <p className="text-sm">
@@ -38,7 +38,7 @@ export default async function Search({ searchParams }: SearchProps) {
       </p>
 
       <div className="grid grid-cols-3 gap-6">
-        {/* {products.map((product) => {
+        {products.map((product) => {
           return (
             <Link
               key={product.id}
@@ -67,7 +67,7 @@ export default async function Search({ searchParams }: SearchProps) {
               </div>
             </Link>
           )
-        })} */}
+        })}
       </div>
     </div>
   )
