@@ -13,17 +13,18 @@
 
 ## DevStore Preview
 
-### Screenshot:
+### Menu Layout:
 
-  <img src="./frontend//src/assets/screenshot1.png" alt="Screenshot 1" width="300">
+  <img src="./public/screenshot/screen1.png" alt="Screenshot 1" width="1200">
+  <br>
+  
+### Item Details:
+  
+  <br>
+    <img src="./public/screenshot/screen2.png" alt="Screenshot 2" width="1200">
   <br>
   <br>
-  <img src="./frontend//src/assets/screenshot2.png" alt="Screenshot 2" width="300">
-  <br>
-  <br>
-  <img src="./frontend//src/assets/screenshot3.png" alt="Screenshot 3" width="300">
-  <br>
-  <br>
+
 
 ## Getting Started
 
@@ -48,7 +49,7 @@ npm install
 #### ou
 
 ```bash
-yarn start
+yarn dev
 ```
 
 #### Run the development server:
